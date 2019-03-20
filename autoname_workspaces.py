@@ -58,6 +58,7 @@ WINDOW_ICONS = {
     'steam': '\uf9d2',
     'thunderbird': '\uf6ed',
     'urxvt': '\ufcb5',
+    'pcmanfm': '\uf74a',
 }
 
 # This icon is used for any application not in the list above
