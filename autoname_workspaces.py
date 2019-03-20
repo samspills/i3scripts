@@ -34,7 +34,6 @@ import i3ipc
 import logging
 import signal
 import sys
-import fontawesome as fa
 
 from util import *
 
@@ -49,64 +48,20 @@ from util import *
 # xprop (https://linux.die.net/man/1/xprop). Run `xprop | grep WM_CLASS`
 # then click on the application you want to inspect.
 WINDOW_ICONS = {
-    'alacritty': fa.icons['terminal'],
-    'atom': fa.icons['code'],
-    'banshee': fa.icons['play'],
-    'blender': fa.icons['cube'],
-    'chromium': fa.icons['chrome'],
-    'cura': fa.icons['cube'],
-    'darktable': fa.icons['image'],
-    'discord': fa.icons['comment'],
-    'eclipse': fa.icons['code'],
-    'emacs': fa.icons['code'],
-    'eog': fa.icons['image'],
-    'evince': fa.icons['file-pdf'],
-    'evolution': fa.icons['envelope'],
-    'feh': fa.icons['image'],
-    'file-roller': fa.icons['compress'],
-    'firefox': fa.icons['firefox'],
-    'firefox-esr': fa.icons['firefox'],
-    'gimp-2.8': fa.icons['image'],
-    'gnome-control-center': fa.icons['toggle-on'],
-    'gnome-terminal-server': fa.icons['terminal'],
-    'google-chrome': fa.icons['chrome'],
-    'gpick': fa.icons['eye-dropper'],
-    'imv': fa.icons['image'],
-    'java': fa.icons['code'],
-    'jetbrains-studio': fa.icons['code'],
-    'keybase': fa.icons['key'],
-    'kicad': fa.icons['microchip'],
-    'kitty': fa.icons['terminal'],
-    'libreoffice': fa.icons['file-alt'],
-    'lua5.1': fa.icons['moon'],
-    'mpv': fa.icons['tv'],
-    'mupdf': fa.icons['file-pdf'],
-    'mysql-workbench-bin': fa.icons['database'],
-    'nautilus': fa.icons['copy'],
-    'nemo': fa.icons['copy'],
-    'openscad': fa.icons['cube'],
-    'pavucontrol': fa.icons['volume-up'],
-    'postman': fa.icons['space-shuttle'],
-    'rhythmbox': fa.icons['play'],
-    'slack': fa.icons['slack'],
-    'slic3r.pl': fa.icons['cube'],
-    'spotify': fa.icons['music'],  # could also use the 'spotify' icon
-    'steam': fa.icons['steam'],
-    'subl': fa.icons['file-alt'],
-    'subl3': fa.icons['file-alt'],
-    'sublime_text': fa.icons['file-alt'],
-    'thunar': fa.icons['copy'],
-    'thunderbird': fa.icons['envelope'],
-    'totem': fa.icons['play'],
-    'urxvt': fa.icons['terminal'],
-    'xfce4-terminal': fa.icons['terminal'],
-    'xournal': fa.icons['file-alt'],
-    'yelp': fa.icons['code'],
-    'zenity': fa.icons['window-maximize'],
+    'emacs': '\ue23a', #'\ufd31', '\ufd25', '\ufcb2', '\uf619'
+    'firefox': '\ue725',
+    'gnome-control-center': '\ufa20',
+    'gnome-terminal-server': '\ue795',
+    'qutebrowser': '\uf484',
+    'slack': '\uf9b0',
+    'spotify': '\uf9c6',
+    'steam': '\uf9d2',
+    'thunderbird': '\uf6ed',
+    'urxvt': '\ufcb5',
 }
 
 # This icon is used for any application not in the list above
-DEFAULT_ICON = '*'
+DEFAULT_ICON = '\ue76b'
 
 # Global setting that determines whether workspaces will be automatically
 # re-numbered in ascending order with a "gap" left on each monitor. This is
